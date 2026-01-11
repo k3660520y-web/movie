@@ -30,7 +30,11 @@ export const getMovieRecommendation = async (mood: string) => {
       }
     });
 
-    return JSON.parse(response.text);
+    const text = response.text;
+    if (!text) {
+      return null;
+    }
+    return JSON.parse(text);
   } catch (error) {
     console.error("Gemini recommendation error:", error);
     return null;
