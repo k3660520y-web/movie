@@ -1,0 +1,7 @@
+{
+  "name": "MovieGo - 影領視界",
+  "description": "一個現代化的電影購票平台，提供直覺的座位選擇、場次查詢與 AI 智能電影推薦功能。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
